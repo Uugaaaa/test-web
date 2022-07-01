@@ -31,7 +31,7 @@
 
 .btn:hover {
     transform: scale(0.98);
-    /* background-color: transparent; */
+    /*background-color: transparent; */
     
 }
 
@@ -141,4 +141,40 @@
 
 .m-5 {
     margin: 4rem ;
+}
+
+
+/* features section */
+.showcase-features {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.showcase-features h1 {
+    font-size: 40px;
+}
+
+.showcase-features p {
+    margin: 20px 0;
+}
+
+.showcase-features .grid {
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+.showcase-features::before,
+.showcase-features::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-3deg);
+    
 }

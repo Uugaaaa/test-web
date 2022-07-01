@@ -2,7 +2,7 @@
 
 
 :root {
-    --primary-color: #2d00f3cc;
+    --primary-color: #6A4093;
 }
 
 * {
@@ -139,15 +139,72 @@ img {
 }
 
 .stats-heading {
-    max-width: 500px;
+    max-width: 900px;
     margin: auto;
 }
 
 .stats .grid h3 {
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .stats .grid p {
     font-size: 20px;
     font-weight: bold;
+}
+
+
+
+
+
+
+
+/*typing effect in features */
+
+.wrapper {
+    height: 20vh;
+    /* centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-demo {
+    width: 14ch;
+    animation: typing 1s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* typing features */
+.wrapper-features {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-features {
+    width: 19ch;
+    animation: typing 1s steps(20), blink 0.5s step-end infinite alternate;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
 }
